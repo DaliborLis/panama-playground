@@ -1,0 +1,56 @@
+# Java compilation output
+*.class
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+out/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Visual Studio Code
+.vscode/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# JVM crash and diagnostic files
+hs_err_pid*
+replay_pid*
+java_error_in_idea_*
+*.hprof
+*.jfr
+
+# Native build artifacts
+*.o
+*.so
+*.a
+*.dll
+*.dylib
+*.exe
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+*~
+*.swp
+*.swo
+
+# Operating-system metadata
+.DS_Store
+Thumbs.db
+
+# Local environment files
+.env
+.env.*
+!.env.example
