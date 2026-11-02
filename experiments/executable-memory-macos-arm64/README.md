@@ -18,7 +18,13 @@ The example:
 **Run:**
 
 ```bash
-java --enable-native-access=ALL-UNNAMED ExecutableMemoryArm64.java
+java --enable-native-access=ALL-UNNAMED ExecutableMemoryMacArm64.java
+```
+
+**Alternatively:**
+```bash
+javac ExecutableMemoryMacArm64.java
+java --enable-native-access=ALL-UNNAMED ExecutableMemoryMacArm64
 ```
 
 **Expected output:**
