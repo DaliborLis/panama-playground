@@ -64,6 +64,16 @@ The generated function returns the integer value `42`.
 
 [Read the Executable Memory documentation](experiments/executable-memory/README.md)
 
+### Executable Memory — macOS ARM64
+
+Allocates a native memory page using macOS `mmap()`, writes AArch64 machine instructions into it, synchronizes the instruction cache using `sys_icache_invalidate()`, changes the page protection from writable to executable, and invokes the generated function through the FFM API.
+
+The generated function returns the integer value `42`.
+
+Unlike the Linux x86-64 example, this experiment demonstrates architecture-specific instruction cache synchronization and the behavior of executable anonymous memory on Apple Silicon.
+
+[Read the macOS ARM64 documentation](experiments/executable-memory-macos-arm64/README.md)
+
 ## Project Principles
 
 Each experiment should:
